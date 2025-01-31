@@ -1,0 +1,83 @@
+.puzzle-game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.title {
+  font-family: 'Dancing Script', cursive; /* Cursive font for title */
+  font-size: 80px; /* Increase title size */
+  color: #f8f8f8; /* Off-white color */
+  margin-bottom: 15px; /* Space between title and buttons */
+  text-align: center; /* Center align title */
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px; /* Rounded corners */
+  transition: background-color 0.2s;
+  font-family: 'Dancing Script', cursive; /* Cursive font for numbers */
+  font-weight: bold; /* Make numbers bold */
+  font-size: 80px; /* Increase font size for numbers to 80px */
+  color: white; /* Change number color */
+  height: 100px; /* Set height to control grid item size */
+  width: 100px; /* Set width to control grid item size */
+  margin: 5px; /* Add some space between grid items */
+}
+
+.button {
+  font-family: 'Dancing Script', cursive; /* Cursive font for buttons */
+  font-size: 24px; /* Font size for buttons */
+  padding: 12px 24px; /* Button padding */
+  margin: 5px; /* Margin between buttons */
+  background-color: #7A5B9D; /* Change button background color */
+  color: #f8f8f8; /* Off-white color */
+  border: none; /* Remove border */
+  border-radius: 10px; /* Rounded corners for buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.completion-message {
+  margin-top: 20px;
+  text-align: center;
+  font-family: 'Dancing Script', cursive; /* Cursive font for message */
+  font-size: 36px; /* Font size for completion message */
+}
+
+/* Animation for completion message */
+@keyframes pop-in {
+  from {
+      transform: scale(0);
+      opacity: 0;
+  }
+  to {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it appears above other content */
+}
+
+.modal-content {
+  background-color: #34246D; /* Modal background color */
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}

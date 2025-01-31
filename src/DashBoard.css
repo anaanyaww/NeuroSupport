@@ -1,0 +1,203 @@
+/* Theme variables */
+:root {
+  --primary: #f8fafc;
+  --secondary: #ffffff;
+  --text: #334155;
+  --accent: #818cf8;
+  --border: #e2e8f0;
+  --shadow: rgba(0, 0, 0, 0.05);
+  --hover-shadow: rgba(0, 0, 0, 0.08);
+}
+
+/* Global styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--primary);
+  color: var(--text);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+/* Title */
+.dashboard-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--text);
+  margin-bottom: 2rem;
+  transition: color 0.3s ease;
+}
+
+/* Card styles */
+.card {
+  background-color: var(--secondary);
+  border-radius: 16px;
+  box-shadow: 0 4px 6px var(--shadow);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px var(--hover-shadow);
+}
+
+.virtual-friend-card {
+  background: linear-gradient(to right bottom, var(--secondary), var(--primary));
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.card-header h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.card-content {
+  padding-top: 1rem;
+}
+
+/* Button styles */
+button {
+  background-color: var(--secondary);
+  color: var(--accent);
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 12px;
+  border: 2px solid var(--accent);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  width: 100%;
+}
+
+button:hover {
+  background-color: var(--accent);
+  color: var(--secondary);
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+button.active {
+  background-color: var(--accent);
+  color: var(--secondary);
+}
+
+/* Multimodal buttons container */
+.flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* Chart container */
+.chart-container {
+  padding: 1.5rem;
+  background-color: var(--secondary);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+}
+
+/* Charts customization */
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line {
+  stroke: var(--border);
+}
+
+.recharts-text {
+  fill: var(--text);
+}
+
+/* Grid system */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tabs styling */
+.tabs-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--border);
+}
+
+.tabs-trigger {
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+  background: none;
+  color: var(--text);
+  transition: all 0.3s ease;
+  width: auto;
+}
+
+.tabs-trigger.active {
+  color: var(--accent);
+  border-bottom: 2px solid var(--accent);
+}
+
+.tabs-content {
+  padding: 1.5rem 0;
+}
+
+/* Accessibility focus styles */
+button:focus-visible,
+.tabs-trigger:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Text styles */
+.text-gray-600 {
+  color: var(--text);
+  opacity: 0.8;
+}
+
+/* Icon styles */
+.icon {
+  color: var(--accent);
+  transition: color 0.3s ease;
+}
+
+/* Mode buttons */
+.mode-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.mode-button svg {
+  color: currentColor;
+}

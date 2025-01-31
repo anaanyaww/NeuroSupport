@@ -1,0 +1,29 @@
+.game-container {
+  text-align: center;
+  position: relative; /* Position for the canvas and title */
+  background-color: #5A4389; /* Your desired background color for the game container */
+  padding: 20px;
+  border-radius: 0px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+  height: 100vh; /* Full viewport height for the game container */
+}
+
+.game-title {
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Change font to match your Slide and Solve page */
+  color: #fff; /* Title color */
+  margin: 40px 0; /* Margin around title */
+  font-size: 50px; /* Adjust size */
+}
+
+canvas {
+  border: 2px solid #fff; /* Optional border for canvas */
+  margin-bottom: 20px; /* Space below the canvas */
+}
+
+#congratulations-message {
+  display: none; /* Initially hidden, can show with JS */
+}
+
+.hidden {
+  display: none;
+}

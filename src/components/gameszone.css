@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Helps with consistent sizing */
+}
+
+.games-container {
+  text-align: center;
+  background-color: aliceblue; /* Add your background image path here */
+  background-size: cover; /* Make sure the image covers the entire container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  padding: 40px; /* Increased padding for more space */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  min-height: 100vh; /* Ensures the container takes the full height of the viewport */
+}
+
+
+.games-title {
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Change font to match your theme */
+  color: #333; /* Title color */
+  margin-bottom: 30px; /* Space below the title */
+  font-size: 36px; /* Title size */
+}
+
+.games-grid {
+  display: flex; /* Use flexbox for easier centering */
+  justify-content: center; /* Center the grid items */
+  flex-wrap: wrap; /* Allow items to wrap */
+  gap: 100px; /* Increased space between boxes */
+}
+
+.game-box {
+  background-color: transparent; /* White background for game boxes */
+  border: 1px solid #5A4389; /* Border color matching your theme */
+  border-radius: 5px; /* Rounded corners */
+  overflow: hidden; /* Ensure the image doesn't overflow */
+  cursor: pointer; /* Show pointer cursor on hover */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  width: 200px; /* Fixed width for game boxes */
+  height: 250px; /* Adjusted height for game boxes */
+  display: flex; /* Center image and text */
+  flex-direction: column; /* Stack image on top of text */
+  align-items: center; /* Center items */
+}
+
+.game-box:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+.game-image {
+  width: 100%; /* Responsive image width */
+  height: 100%; /* Fixed height for image to prevent cutting */
+  object-fit: cover; /* Cover to maintain aspect ratio */
+}
+
+.game-name {
+  margin-top: 10px; /* Space between image and text */
+  font-size: 20px; /* Font size for game name */
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Match your theme font */
+  color: #5A4389; /* Game name color */
+}

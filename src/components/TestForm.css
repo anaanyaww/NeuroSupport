@@ -1,0 +1,126 @@
+.test-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+.start-button-container {
+    text-align: center;
+}
+
+.start-button-container h2 {
+    font-size: 2em;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 20px; /* Added margin for spacing */
+}
+
+.start-button-container p {
+    font-size: 1.5em;
+    color: #0b5ac9;
+    text-align: center;
+    margin-bottom: 30px; /* Added margin for spacing */
+}
+
+.start-button {
+    background-color: #eb3713;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.start-button:hover {
+    background-color: #0aad2e;
+}
+
+.question-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+.question-number {
+    color: #0073e6;
+    font-weight: bold;
+}
+
+.question-text {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.option-button {
+    background-color: #e6f7ff;
+    color: #0073e6;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.option-button:hover {
+    background-color: #cceeff;
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    height: 10px;
+}
+
+.progress {
+    background-color: #0073e6;
+    height: 100%;
+}
+
+.next-button {
+    margin-top: 20px; /* Added margin to move the next button down */
+}
+
+.results-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+.results-container h2 {
+    color: #0073e6;
+}
+
+.results-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.results-container li {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
